@@ -150,7 +150,7 @@ countdown.message   = "修論/卒論提出〆切まで";
    function run(){
      var now   = new Date();
      draw(parseInt((countdown.limit-now)/1000), countdown.message, "orange");
-     setTimeout("countdown.run()", 1000);
+     setTimeout("countdown.run()", 100);
    }
 
    countdown.run = run;
